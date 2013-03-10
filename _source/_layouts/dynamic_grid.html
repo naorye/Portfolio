@@ -1,0 +1,26 @@
+---
+layout: default
+header: >
+    <link rel="stylesheet" href="/assets/css/dynamic_grid.css" />
+---
+<div class="dynamic_grid">
+    {% if page.description %}
+        {% if page.description != "" %}
+            {% assign class = " has-desc" %}
+            <div class="description">{{page.description}}</div>
+        {% endif %}
+    {% endif %}
+    <div class="images-grid{{ class }}" data-images-margin="{{page.imagesMargin}}">
+        {% for item in page.items %}
+            <img    src="{{item.thumbnailPath}}"
+                    title="{{item.title}}"
+                    data-height="{{item.height}}"
+                    data-width="{{item.width}}"
+                    data-image-path="{{item.imagePath}}" />
+        {% endfor %}
+        <div class="clearfix"></div>
+    </div>
+</div>
+<script src="/assets/js/jquery-1.9.0.min.js"></script>
+<script src="/assets/js/jquery.colorbox.js"></script>
+<script src="/assets/js/dynamic_grid.js"></script>

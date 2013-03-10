@@ -1,0 +1,5 @@
+source: "./_source"
+destination: "./_site"
+
+topics_generator: true
+dynamic_grid_generator: true

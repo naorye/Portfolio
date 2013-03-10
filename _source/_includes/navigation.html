@@ -1,0 +1,23 @@
+<div class="navigation">
+    <ul class="topics-list">
+        {% for topic in site.topics %}
+            <li>
+                {% if topic.active %}
+                    <div class="topic"><a href="{{ topic.base.url }}">{{ topic.name }}</a></div>
+                {% else %}
+                    <div class="topic">{{ topic.name }}</div>
+                {% endif %}
+
+                {% if topic.items.size > 0 %}
+                    <ul class="items-list">
+                        {% for item in topic.items %}
+                            <li class="item">
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

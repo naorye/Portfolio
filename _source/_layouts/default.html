@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title> {% if page.title %} {{ page.title }} | {% endif %} Ilana Ruth Kohan, Photographer</title>
+        <link rel="stylesheet" href="/assets/css/index.css" />
+        {{page.header}}
+    </head>
+    <body>
+        <div id="main">
+            <div class="header">
+                {% include title.html %}
+            </div> 
+            <div class="menu">
+                {% include navigation.html %}
+            </div>
+            <div class="content">
+                {% if page.text %}
+                    <div class="text pre">{{ page.text }}</div>
+                {% endif %}
+                {{ content }}
+            </div>
+            <div class="footer">
+                &copy; Ilana Ruth Kohan Photography 2013 | All Rights Reserved.
+            </div>
+        </div>
+    </body>
+</html>

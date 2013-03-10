@@ -1,0 +1,18 @@
+.title {
+    text-transform: uppercase;
+    border-bottom: 4px solid #000000;
+}
+
+.title .name {
+    font: bold 16px/1.3em "Open Sans", sans-serif;
+}
+
+.title .email {
+    float: right;
+    font: 15px/1em "Open Sans", sans-serif;
+    text-transform: lowercase;
+}
+
+.title .profession {
+    font: 13px/1.3em "Open Sans", sans-serif;
+}

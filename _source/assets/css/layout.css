@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 2;
+}
+
+.header .title {
+    margin-left: 180px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.menu {
+    /*width: 195px;*/
+    float: left;
+    position: fixed;
+    /*position: relative;*/
+}
+
+.content {
+    margin-top: 62px;
+    margin-left: 180px;
+    margin-right: 20px;
+}
+
+.content .text {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.footer {
+    margin-left: 235px;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+}

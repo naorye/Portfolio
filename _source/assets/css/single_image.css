@@ -1,0 +1,11 @@
+html, body, #main, .content {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.single_image {
+    background-size: cover;
+}
