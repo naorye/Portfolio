@@ -22,27 +22,26 @@ body {
     margin-right: 220px;
 }
 
-.dynamic_grid .images-grid .image-container {
-    float: left;
+.dynamic_grid .images-grid .photo-container {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative; 
+    float: left;    
     padding: 0;
 }
 
-.dynamic_grid .images-grid .image-container a {
+.dynamic_grid .images-grid .photo-container a {
     margin: 0;
     padding: 0;
 }
 
-.dynamic_grid .images-grid .image-container img {
-    display: block;
+.dynamic_grid .images-grid .photo-container img {
+    max-width: none;
     margin-top: 0;
 }
 
-.dynamic_grid .images-grid .image-container .clearfix:before,
-.dynamic_grid .images-grid .image-container .clearfix:after {
-    content: "";
-    display: table;
-}
-
-.dynamic_grid .images-grid .image-container .clearfix:after {
-    clear: both;
+.dynamic_grid .images-grid .photo-container .photo-wrapper {
+    overflow: hidden;
 }
