@@ -29,3 +29,10 @@ a {
 .row { display: table-row; }
 .cell { display: table-cell; }
 .pre { white-space: pre; }
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
